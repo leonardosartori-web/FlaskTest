@@ -20,7 +20,12 @@
 		  </button>
 		</h2>
 		<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-		  <div class="accordion-body">{{ post.info }}</div>
+		  <div class="accordion-body">{{ post.info }}
+		  <form action="{{post.id}}/delete" method="POST">
+			<button type="submit" class="btn btn-danger btn-sm my-2">Elimina
+			</button>
+			</form>
+		  </div>
 		</div>
 	  </div>
 	{% endfor %}
