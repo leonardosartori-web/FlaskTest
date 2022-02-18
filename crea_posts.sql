@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS posts;
 
 CREATE TABLE posts (
+	id INTEGER PRIMARY KEY,
 	titolo TEXT,
 	info TEXT
 );
